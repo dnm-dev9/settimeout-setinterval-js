@@ -1,0 +1,22 @@
+{
+  "name": "settimeout-setinterval",
+  "version": "1.0.0",
+  "description": "A simple js app using settimeout and setinterval",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dnm-dev9/settimeout-setinterval-js.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dnm-dev9/settimeout-setinterval-js/issues"
+  },
+  "homepage": "https://github.com/dnm-dev9/settimeout-setinterval-js#readme",
+  "dependencies": {
+    "jquery": "^3.5.1"
+  }
+}

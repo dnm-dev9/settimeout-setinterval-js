@@ -13,3 +13,19 @@ let displaytime = () => {
 setTimeout(displaytime, 5000);
 
 // Part 2
+
+let $ = require('jquery');
+
+let timeoutID;
+
+$('#setTimeout').click(()=>{
+  timeoutID = setTimeout(()=>{
+    alert('Date and Time now is : '+ dateTime);
+    console.log('Display was clicked');
+  }, 5000);
+});
+
+$('#cancelTimeout').click(()=>{
+  clearTimeout(timeoutID);
+  console.log('Cancel was clicked');
+});
