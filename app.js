@@ -27,5 +27,21 @@ $('#setTimeout').click(()=>{
 
 $('#cancelTimeout').click(()=>{
   clearTimeout(timeoutID);
+  clearInterval(timeoutID2);
   console.log('Cancel was clicked');
+});
+
+// Part 3
+let displaytm = () => {
+  var d = new Date();
+  var t = d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds();
+  console.log('Time now is : '+ t)
+  // alert(dateTime);
+}
+
+let timeoutID2 = setInterval(displaytm, 2000);
+// clearInterval(timeoutID2);
+$('#stopconsoleop').click(()=>{
+  clearInterval(timeoutID2);
+  console.log('Stop Console Output Button was clicked');
 });
